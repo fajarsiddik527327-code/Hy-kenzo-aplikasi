@@ -91,8 +91,8 @@
 
                 <!-- METODE PAYMENT MEMBERSHIP AUTOMATIC (ATAS MENU UTAMA) -->
                 <div class="bg-blue-50 border border-blue-200 rounded-xl p-3">
-                    <span class="bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Payment Manual/Membership</span>
-                    <div class="grid grid-cols-3 gap-2 mt-2 text-xs">
+                    <div class="text-[10px] text-blue-600 font-bold uppercase tracking-wider mb-2">Pilihan Otomatis & No Payment Membership</div>
+                    <div class="grid grid-cols-3 gap-2 text-xs">
                         <div class="bg-white p-2 rounded border border-blue-100 shadow-sm text-center">
                             <p class="font-bold text-blue-600">DANA</p>
                             <p class="text-[10px] select-all cursor-pointer">081373422161</p>
@@ -103,7 +103,7 @@
                         </div>
                         <div class="bg-slate-100 p-2 rounded border border-slate-200 text-center text-slate-400">
                             <p class="font-bold">QRIS</p>
-                            <p class="text-[9px]">Soon</p>
+                            <p class="text-[9px]">Coming Soon</p>
                         </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                     <input type="text" id="search-menu-input" onkeyup="searchMenu()" placeholder="Cari menu layanan (pulsa, game, jb, dll)..." class="w-full pl-9 pr-4 py-2.5 bg-slate-100 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-blue-500 transition">
                 </div>
 
-                <!-- GRID LAYANAN UTAMA -->
+                <!-- KATEGORI LAYANAN UTAMA -->
                 <div>
                     <h3 class="text-sm font-bold text-slate-500 mb-3 uppercase tracking-wider">Kategori Layanan</h3>
                     <div class="grid grid-cols-4 gap-3 text-center" id="menu-grid-items">
@@ -138,9 +138,23 @@
                             <div class="bg-blue-100 text-blue-600 w-10 h-10 rounded-lg flex items-center justify-center mx-auto mb-1.5"><i class="fa-solid fa-gamepad text-lg"></i></div>
                             <span class="text-xs font-semibold block">Topup Game</span>
                         </div>
-                        <div onclick="openServiceModal('modal-menujb')" class="menu-item p-2 bg-slate-50 rounded-xl border border-slate-100 cursor-pointer hover:bg-blue-50 hover:border-blue-200 transition col-span-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white border-none shadow">
-                            <div class="text-white w-full h-10 flex items-center justify-center gap-2 font-black tracking-widest"><i class="fa-solid fa-fire text-lg text-yellow-300"></i> AKSES MENU JB HYKENZO</div>
+                    </div>
+                </div>
+
+                <!-- MENU JB (Posisinya Tepat Di Bawah Kategori Layanan & Bisa Di Klik) -->
+                <div class="space-y-2">
+                    <h3 class="text-sm font-bold text-slate-500 uppercase tracking-wider">Layanan Eksklusif Jual Beli</h3>
+                    <div onclick="openServiceModal('modal-menujb')" class="menu-item p-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-2xl cursor-pointer shadow-md hover:from-blue-700 hover:to-blue-900 transition flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-fire text-yellow-300 animate-bounce"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-black text-sm tracking-widest">AKSES MENU JB HYKENZO</h4>
+                                <p class="text-[11px] text-blue-200">Bot WA, Wink, Suntik Sosmed, Logo JB, dll</p>
+                            </div>
                         </div>
+                        <i class="fa-solid fa-circle-chevron-right text-xl text-blue-200"></i>
                     </div>
                 </div>
 
@@ -254,13 +268,4 @@
                         
                         <div onclick="alert('Menghubungkan ke Live Chat CS Support 24 Jam...')" class="bg-blue-600 text-white font-bold p-2.5 rounded-xl text-center text-xs cursor-pointer hover:bg-blue-700 transition">
                             <i class="fa-solid fa-headset mr-1"></i> LIVE CHAT CS SUPPORT 24 JAM
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Fitur Kategori (Grid View - 22 Kategori Komplit) -->
-                <div class="space-y-2">
-                    <h5 class="text-xs font-bold text-slate-400 uppercase tracking-widest"><i class="fa-solid fa-layer-group mr-1"></i> Semua Kategori Menu</h5>
-                    <div class="grid grid-cols-2 gap-2 text-[11px]">
-                        <div class="p-2 bg-slate-50 rounded border border-slate-100 flex justify-between"><span>1. Free Fire</span><span class="text-blue-600 font-bold">Otomatis</span></div>
-                        <div class="p-2 bg-slate-50 rounded border border-slate-100 flex justify-between"><span>2. Mobile Legends</span><span class="tex
+     
